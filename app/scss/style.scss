@@ -1,0 +1,84 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import "bootstrap";
+
+// bootstrap angular ui must have
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+
+$inicator-color: white;
+@mixin indicator-position {
+  position: relative;
+  top: 150px;
+  left: 200px;
+}
+
+@mixin round-border {
+  display: inline-block;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+
+@keyframes border-pulse {
+  from {
+    border: solid 1px white;
+  }
+  to {
+    border: solid 5px grey;
+
+  }
+}
+
+@-webkit-keyframes border-pulse {
+  from {
+    border: solid 1px white;
+  }
+  to {
+    border: solid 5px grey;
+
+  }
+}
+
+@-moz-keyframes border-pulse {
+  from {
+    border: solid 1px white;
+  }
+  to {
+    border: solid 5px grey;
+
+  }
+}
+
+#video-pane {
+  min-height: 500px;
+  background: url("../images/fear-and-loathing.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.desktop-indicator {
+  color: $inicator-color;
+  font-size: 72pt;
+  border: 2px solid;
+  @include indicator-position;
+  @include round-border;
+}
+
+.mobile-indicator {
+  color: $inicator-color;
+  font-size: 36pt;
+  border: 2px dotted;
+  @include indicator-position;
+  @include round-border;
+}
+
+.animate-border {
+  animation: border-pulse 1s infinite;
+  -webkit-animation: border-pulse 1s infinite;
+  -moz-animation: border-pulse 1s infinite;
+}
