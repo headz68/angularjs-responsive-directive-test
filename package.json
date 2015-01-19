@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/headz68/angularjs-responsive-directive-test.git"
+    "url": "https://github.com/headz68/fuisz-angularjs-challenge.git"
   },
   "devDependencies": {
     "load-grunt-tasks": "~1.0.0",
