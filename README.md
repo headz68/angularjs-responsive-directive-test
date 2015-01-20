@@ -1,3 +1,4 @@
+(scaffold and build generated with Yeoman!)
 ## Grunt tasks:
 ..for watching (Sass, Server on 127.0.0.1:9000 with LiveReload)
 ```
